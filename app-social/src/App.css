@@ -1,0 +1,33 @@
+.app-grid {
+  display: grid;
+
+  grid-template-areas: 
+    "h h"
+    "n c";
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr; 
+  grid-gap: 10px;   
+}
+
+.header {
+  grid-area: h;
+  background: rgb(0, 182, 24);
+}
+.header img {
+  width: 60px;
+}
+
+.navbar {
+  grid-area: n;
+  background: khaki;
+}
+
+.content {
+  grid-area: c;
+  background: lightskyblue;
+}
+.content img {
+  min-width: 100%;
+  height: 250px;
+}
